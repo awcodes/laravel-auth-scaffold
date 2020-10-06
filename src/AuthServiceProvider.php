@@ -2,9 +2,8 @@
 
 namespace Awcodes\Auth;
 
-use Laravel\Fortify\Fortify;
-use Awcodes\Auth\Commands\AuthCommand;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Fortify\Fortify;
 
 class AuthServiceProvider extends ServiceProvider
 {
