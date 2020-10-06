@@ -2,9 +2,9 @@
 
 namespace Awcodes\Auth\Tests;
 
+use Awcodes\Auth\AuthServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Awcodes\Auth\AuthServiceProvider;
 
 class TestCase extends Orchestra
 {
