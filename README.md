@@ -5,17 +5,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/awcodes/laravel-auth-scaffold.svg?style=flat-square)](https://packagist.org/packages/awcodes/laravel-auth-scaffold)
 
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-Learn how to create a package like this one, by watching our premium video course:
-
-[![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+This is just a basic auth scaffolding for Laravel Fortify. If you want to use it great, if not, so be it.
 
 ## Installation
 
@@ -25,30 +15,9 @@ You can install the package via composer:
 composer require awcodes/laravel-auth-scaffold
 ```
 
-You can publish and run the migrations with:
-
+You can publish the views with:
 ```bash
-php artisan vendor:publish --provider="Awcodes\Auth\AuthServiceProvider" --tag="migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-```bash
-php artisan vendor:publish --provider="Awcodes\Auth\AuthServiceProvider" --tag="config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-## Usage
-
-``` php
-$laravel-auth-scaffold = new Awcodes\Auth();
-echo $laravel-auth-scaffold->echoPhrase('Hello, Awcodes!');
+php artisan vendor:publish --provider="Awcodes\Auth\AuthServiceProvider" --tag="views"
 ```
 
 ## Testing

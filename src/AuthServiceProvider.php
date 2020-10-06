@@ -30,11 +30,8 @@ class AuthServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__ . '/../resources/views' => base_path('resources/views/vendor/auth'),
-            ], 'views');
-
-            $this->publishes([
                 __DIR__ . '/../resources/css' => public_path('vendor/auth/css'),
-            ], 'auth-assets');
+            ], 'awcodes-auth-views');
         }
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'auth');
